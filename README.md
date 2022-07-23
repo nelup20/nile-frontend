@@ -7,3 +7,4 @@ An Amazon clone created for the purpose of learning and/or diving deeper into th
 - Docker
 - Kubernetes
 - MySQL
+- NgRx
