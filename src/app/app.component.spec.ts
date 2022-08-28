@@ -16,16 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'nile-frontend'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('nile-frontend');
-  });
-
-  it('should render title', () => {
+  it('should render h1', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('nile-frontend app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome to Nile. This project is still in TODO/a WIP');
   });
 });
